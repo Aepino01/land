@@ -1,0 +1,235 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* SECCION DE FUENTES */
+*{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.raleway-regular{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* SECCION DE CABECERA */
+.header {
+  background-image: url("fondoCabecera2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 10vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.header h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3vw;
+  color: rgba(255, 255, 255, 0.676);
+}
+
+/* SECCION DE BARRA DE NAVEGACION */
+.barraNav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1b2735;
+  padding: 0.3rem 0;
+  z-index: 1000;
+}
+
+nav > ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.3rem; 
+  margin-bottom: 0;
+  line-height: 1.5rem;
+  font-size: 1rem;    
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.barraNav nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.barraNav a:hover {
+  color: #6363e5; 
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 15vw;
+  }
+
+  .barraNav {
+    padding: 0.1rem 0;
+  }
+
+  nav > ul {
+    flex-direction: column;
+    font-size: 0.95rem;   
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+/* SECCION DE CONTENIDO PRINCIPAL */
+.contenido{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+  .contenido {
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .contenido img {
+    flex: 1 1 0;
+    max-width: 45vw; 
+    height: auto;
+    min-width: 80px;
+  }
+}
+
+.descripcion{
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  color: #020728;
+}
+
+h2{
+  font-family: "Montserrat", sans-serif;
+  font-size: 3vw;
+  margin-left: 2rem;
+  text-align: left;
+}
+
+p {
+  margin: 2rem 2rem;
+  line-height: 1.6;    
+  font-size: 1rem;
+  font-family: "raleway", sans-serif;   
+}
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.galery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* columnas adaptables */
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .galery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .galery img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.galery img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.galery img:hover {
+  transform: scale(1.05);
+}
+
+.coments{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.coments p{
+  font-size: 1.2rem;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 251, 217);
+  padding: 1rem 0;
+}
+.footer p {
+  font-size: 0.8rem;
+  color: rgba(23, 27, 10, 0.642);
+  text-align: center;
+  font-style: italic;
+  margin: 0;
+}

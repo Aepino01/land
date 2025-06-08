@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Stylesheets/style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <title>Vite App</title>
+  </head>
+  <body>
+      <section class="header">
+        <h1>NOMBRE DE LA EMPRESA</h1>
+        <h2>"No es el diseño, es la actitud"</h2>
+      </section>
+      <section class="barraNav">  
+        <nav>
+          <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="#Sobre Nosotros">Sobre Nosotros</a></li>
+            <li><a href="#products">Productos</a></li>
+            <li><a href="/contact">Contacto</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section id="Sobre Nosotros" class="descripcion"> 
+        <section class="contenido"> 
+          <img src="https://placehold.co/580x850" alt="Imagen de ejemplo1" style="max-width:100%;height:auto;">
+          <img src="https://placehold.co/580x850" alt="Imagen de ejemplo2" style="max-width:100%;height:auto;">
+        </section>
+        <h2>Nombre otra vez</h2>
+        <p>Bienvenido a nuestra tienda online, donde ofrecemos una amplia variedad de
+          hodies, una prenda comoda y en tendencia, con un diseño unico y exclusivo.</p>
+          <p>Fundada por #### en el año $$$$, con el objetivo de ofrecer productos de alta calidad</p>
+          <p>
+          Nos enfocamos en la calidad de los materiales y la confección, para ofrecerte
+          un producto que no solo luzca bien, sino que también te haga sentir bien.
+          Nuestro objetivo es brindarte una experiencia de compra excepcional, desde el momento
+          en que entras a nuestra pagina hasta que recibes tu pedido.</p>
+          
+      </section>
+      <section class="productos" id="products">
+        <h2>Productos</h2>
+        <section class="galery">
+          <img src="https://placehold.co/580x850" alt="Imagen de ejemplo1" style="max-width:100%;height:auto;">
+          <img src="https://placehold.co/580x850" alt="Imagen de ejemplo1" style="max-width:100%;height:auto;">
+          <img src="https://placehold.co/580x850" alt="Imagen de ejemplo1" style="max-width:100%;height:auto;">
+          <img src="https://placehold.co/580x850" alt="Imagen de ejemplo1" style="max-width:100%;height:auto;">
+          <img src="https://placehold.co/580x850" alt="Imagen de ejemplo1" style="max-width:100%;height:auto;">
+          <img src="https://placehold.co/580x850" alt="Imagen de ejemplo1" style="max-width:100%;height:auto;">
+        </section>
+      </section>
+      <section class="Reseñas">
+        <h2>Reseñas de Clientes</h2>
+        <section class="coments">
+          <article class="comentario">
+            <h3>Juan Pérez</h3>
+            <p>¡Excelente calidad y atención! Muy recomendable.</p>
+          </article>
+          <article class="comentario">
+            <h3>María López</h3>
+            <p>Me encantó el diseño de los productos. Volveré a comprar.</p>
+          </article>
+          <article class="comentario">
+            <h3>Carlos Ruiz</h3>
+            <p>El envío fue rápido y el producto superó mis expectativas.</p>
+          </article>
+        </section>
+      </section>
+      <section>
+        <h2>Contacto</h2>
+        <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros.
+          Estamos aquí para ayudarte y hacer que tu experiencia de compra sea lo más agradable posible.</p>
+        <section class="contact">
+          <form action="#" method="post" style="display: flex; flex-direction: column; gap: 1em; max-width: 400px;">
+            <label>
+                Nombre completo:
+                <input type="text" name="nombre" required>
+            </label>
+            <label>
+                Telefono o Correo Electrónico:
+                <input type="text" name="metodoContacto" required>
+            </label> 
+            <fieldset style="border: none; padding: 0;">
+                <legend>Género:</legend>
+                <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
+                <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+                <label><input type="radio" name="genero" value="Transformer"> Otro</label>
+            </fieldset>
+            <label>
+                Comentarios:
+                <textarea name="comentarios" rows="4" required></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </section>
+      <section class="footer">
+        <p>© 2023 Nombre de la Empresa. Todos los derechos reservados.</p>
+      </section>
+  </body>
+</html>
