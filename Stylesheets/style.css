@@ -186,13 +186,14 @@ p {
   }
 }
 
+
 .galery img {
-  width: 100%;
-  height: auto;
-  border-radius: 1rem;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  width: 100%;      
+  height: 250px;     
+  object-fit: cover;  
+  border-radius: 1rem; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; 
 }
 
 .galery img:hover {
